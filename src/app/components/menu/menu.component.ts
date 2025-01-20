@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-menu',
   imports: [SubMenuComponent, CommonModule],
+  standalone: true,
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.scss'
 })

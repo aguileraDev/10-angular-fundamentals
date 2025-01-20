@@ -4,6 +4,7 @@ import { Component, EventEmitter, input, output, Output } from '@angular/core';
 @Component({
   selector: 'app-sub-menu',
   imports: [CommonModule],
+  standalone: true,
   templateUrl: './sub-menu.component.html',
   styleUrl: './sub-menu.component.scss'
 })

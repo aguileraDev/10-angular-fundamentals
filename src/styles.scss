@@ -1,17 +1,1 @@
-@use './app/ui/styles/variables.scss' as variables;
-@use './app/ui/styles/mixins.scss' as mixins;
-@use './app/ui/styles/font.scss' as font;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Avenir Next, sans-serif;
-}
-
-body {
-  width: 100%;
-  height: 100vh;
-  padding-inline: 4.5rem;
-  background-color: #fff;
-}

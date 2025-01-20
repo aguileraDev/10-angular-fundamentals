@@ -1,0 +1,7 @@
+@use '../../ui/styles/variables.scss' as variables;
+
+.divider {
+  opacity: .15;
+  margin: 6rem 0;
+  color: variables.$primary-black;
+}

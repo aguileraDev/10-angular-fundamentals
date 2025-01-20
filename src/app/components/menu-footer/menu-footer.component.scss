@@ -1,0 +1,47 @@
+@use '../../ui/styles/variables.scss' as variables;
+@use '../../ui/styles/mixins.scss' as mixins;
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 13px;
+      display: inline-flex;
+
+      &--footer {
+          font-size: 1rem;
+      }
+  }
+
+  &__link {
+      color: variables.$primary-gray;
+      list-style: none;
+      text-decoration: none;
+      padding: .75rem 1.25rem;
+      border-radius: 2rem;
+
+      &:hover {
+          color: variables.$primary-black;
+          background-color: variables.$hover-gray;
+          transition: .25s ease-in all;
+      }
+
+      &--footer {
+          color: variables.$primary-black;
+          list-style: none;
+          text-decoration: none;
+          padding: .75rem 1.25rem;
+      }
+
+  }
+
+  &__link--active {
+      font-weight: bold;
+      color: variables.$primary-black;
+  }
+
+}

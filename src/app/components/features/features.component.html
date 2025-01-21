@@ -1,11 +1,11 @@
 <section class="features">
   <app-features-header [header]="cardsHeader"/>
   <div class="features__wrapper">
-    <article tabindex="22" class="features__card">
-      <p tabindex="23" class="features__card__text">Clean the bathroom<span class="features__card__cursor"></span></p>
+    <article  class="features__card">
+      <p class="features__card__text">Clean the bathroom<span class="features__card__cursor"></span></p>
     </article>
-    <article tabindex="24" class="features__card">
-      <div tabindex="25" class="features__grid">
+    <article class="features__card">
+      <div class="features__grid">
         <div class="features__grid-item"></div>
         <div class="features__grid-item"></div>
         <div class="features__grid-item"></div>
@@ -24,65 +24,28 @@
         <div class="features__grid-item"></div>
       </div>
     </article>
-    <article tabindex="26" class="features__card">
+    <article  class="features__card">
       <picture>
         <img src="check-icon.svg" alt="check icon" srcset="">
       </picture>
     </article>
-    <p tabindex="27" class="features__footer">Create tasks with a single step and a clear goal</p>
-    <p tabindex="28" class="features__footer">Pick a few tasks each day and snooze the rest</p>
-    <p tabindex="29" class="features__footer">Complete your daily tasks for big progress over time</p>
+    <p  class="features__footer">Create tasks with a single step and a clear goal</p>
+    <p  class="features__footer">Pick a few tasks each day and snooze the rest</p>
+    <p  class="features__footer">Complete your daily tasks for big progress over time</p>
   </div>
   <app-divider/>
   <app-features-header [header]="gesturesHeader"/>
-  <div class="features__images__wrapper">
-    <picture class="features__images__item">
-      <img tabindex="33" src="doo_gestures_01@2x.jpg" alt="Doo gestures features" srcset=""></picture>
-    <picture class="features__images__item">
-      <img tabindex="34" src="doo_gestures_02@2x.png" alt="Doo gestures features" srcset=""></picture>
-  </div>
-  <app-divider/>
+  <app-features-images [images]="gesturesImages" [isBasic]="true" />
   <app-features-header [header]="taskCreationHeader"/>
-  <div class="features__images__wrapper--stairs">
-    <picture>
-      <img tabindex="38" src="iphone_frame@2x.png" alt="Doo app example task creation" srcset=""></picture>
-    <picture>
-      <img tabindex="39" src="iphone_frame@2x.png" alt="Doo app example task creation" srcset=""></picture>
-    <picture>
-      <img tabindex="40" src="iphone_frame@2x.png" alt="Doo app example task creation" srcset=""></picture>
-  </div>
-  <app-divider/>
+  <app-features-images [images]="imagesTaskCreation" [isStairs]="true"/>
   <app-features-header [header]="sharingHeader"/>
-  <div class="features__images__wrapper features__images__wrapper--single">
-    <picture>
-      <img tabindex="44" src="doo_collaboration_sharing@2x.jpg" alt="Doo app collaboration example" srcset="">
-    </picture>
-  </div>
-  <app-divider/>
+  <app-features-images [images]="sharingImages" [isSingle]="true"/>
   <app-features-header [header]="customizationHeader"/>
-  <div class="features__images__wrapper features__images__wrapper--single">
-    <picture>
-      <img tabindex="48" src="doo_reminder_options_customization@2x.jpg" alt="Doo app customization example" srcset="">
-    </picture>
-  </div>
-  <app-divider/>
+  <app-features-images [images]="customizationImages" [isSingle]="true"/>
   <app-features-header [header]="appleWatchHeader"/>
-  <div class="features__images__wrapper features__images__wrapper--carrousel">
-    <picture>
-      <img tabindex="52" src="doo_apple_watch_complications@2x.jpg" alt="Doo app running on apple watch" srcset="">
-    </picture>
-  </div>
-  <app-divider/>
+  <app-features-images [images]="carrouselImages" [isCarrousel]="true"/>
   <app-features-header [header]="privacyHeader" />
-  <div class="features__images__wrapper--comparator">
-    <picture>
-      <img tabindex="56" src="lock_icon@2x.jpg" alt="lock icon" srcset="">
-    </picture>
-    <picture>
-      <img tabindex="57" src="doo_app_lock@2x.jpg" alt="Lock by face id" srcset="">
-    </picture>
-  </div>
-  <app-divider/>
+  <app-features-images [images]="privacyImages" [isComparator]="true"/>
   <app-features-summary/>
 </section>
 <app-downloads/>

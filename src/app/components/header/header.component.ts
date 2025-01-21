@@ -1,5 +1,5 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { MenuComponent } from '../menu/menu.component';
+import { Component } from '@angular/core';
+import { MenuComponent } from '@components/menu/menu.component';
 
 @Component({
   selector: 'app-header',

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule} from '@angular/common';
-import { ReviewCardComponent } from "../review-card/review-card.component";
-import { ReviewData } from '../../interfaces/review.data.interface';
+import { ReviewCardComponent } from "@components/review-card/review-card.component";
+import { ReviewData } from '@interfaces/review.data.interface';
 
 
 @Component({

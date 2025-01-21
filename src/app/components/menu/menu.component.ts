@@ -1,6 +1,6 @@
-import { booleanAttribute, Component, Input, input } from '@angular/core';
+import { booleanAttribute, Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItem } from '../../interfaces/menu.item.interface';
+import { MenuItem } from '@interfaces/menu.item.interface';
 
 @Component({
   selector: 'app-menu',

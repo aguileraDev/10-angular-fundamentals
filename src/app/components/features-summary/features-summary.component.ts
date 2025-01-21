@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { DividerComponent } from '../divider/divider.component';
-import { FeaturesSummary } from '../../interfaces/features.summary.interface';
+import { DividerComponent } from '@components/divider/divider.component';
+import { FeaturesSummary } from '@interfaces/features.summary.interface';
 import { Link } from '@interfaces/link.interface';
 import { LinkComponent } from '@components/link/link.component';
 

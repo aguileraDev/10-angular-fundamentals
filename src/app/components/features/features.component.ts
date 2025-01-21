@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { DividerComponent } from '../divider/divider.component';
-import { FooterComponent } from "../footer/footer.component";
-import { FeaturesSummaryComponent } from '../features-summary/features-summary.component';
+import { DividerComponent } from '@components/divider/divider.component';
+import { FooterComponent } from "@components/footer/footer.component";
+import { FeaturesSummaryComponent } from '@components/features-summary/features-summary.component';
 
 @Component({
   selector: 'app-features',

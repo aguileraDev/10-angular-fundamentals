@@ -1,8 +1,5 @@
 <section class="features">
-  <header tabindex="19" class="features__header">
-    <p tabindex="20" class="features__keyword">The Doo Workflow</p>
-    <h2 tabindex="21" class="features__subtitle">A simple way to build better habits and get things done</h2>
-  </header>
+  <app-features-header [header]="cardsHeader"/>
   <div class="features__wrapper">
     <article tabindex="22" class="features__card">
       <p tabindex="23" class="features__card__text">Clean the bathroom<span class="features__card__cursor"></span></p>
@@ -37,11 +34,7 @@
     <p tabindex="29" class="features__footer">Complete your daily tasks for big progress over time</p>
   </div>
   <app-divider/>
-  <header class="features__header">
-    <p tabindex="30" class="features__keyword">Gestures</p>
-    <h2 tabindex="31" class="features__subtitle">Swipe your way to success</h2>
-    <p tabindex="32" class="features__description">Gestures transform your entire screen into a button. Select your tasks for the day and enjoy flicking them off your todo list. Without even having to look.</p>
-  </header>
+  <app-features-header [header]="gesturesHeader"/>
   <div class="features__images__wrapper">
     <picture class="features__images__item">
       <img tabindex="33" src="doo_gestures_01@2x.jpg" alt="Doo gestures features" srcset=""></picture>
@@ -49,11 +42,7 @@
       <img tabindex="34" src="doo_gestures_02@2x.png" alt="Doo gestures features" srcset=""></picture>
   </div>
   <app-divider/>
-  <header class="features__header">
-    <p tabindex="35" class="features__keyword">Task Creation</p>
-    <h2 tabindex="36" class="features__subtitle">Made for speed</h2>
-    <p tabindex="37" class="features__description">Doo uses a set of custom keyboards to keep controls within reach. Create one-off tasks or future appointments with ease. No interruption. No fuss.</p>
-  </header>
+  <app-features-header [header]="taskCreationHeader"/>
   <div class="features__images__wrapper--stairs">
     <picture>
       <img tabindex="38" src="iphone_frame@2x.png" alt="Doo app example task creation" srcset=""></picture>
@@ -63,44 +52,28 @@
       <img tabindex="40" src="iphone_frame@2x.png" alt="Doo app example task creation" srcset=""></picture>
   </div>
   <app-divider/>
-  <header class="features__header">
-    <p tabindex="41" class="features__keyword">Sharing</p>
-    <h2 tabindex="42" class="features__subtitle">Collaborate in style</h2>
-    <p tabindex="43" class="features__description">Send grocery lists, chores, and other tasks to others with iMessage. Edits made by one person get sent to everyone so you can keep track of progress. Don’t forget the milk!.</p>
-  </header>
+  <app-features-header [header]="sharingHeader"/>
   <div class="features__images__wrapper features__images__wrapper--single">
     <picture>
       <img tabindex="44" src="doo_collaboration_sharing@2x.jpg" alt="Doo app collaboration example" srcset="">
     </picture>
   </div>
   <app-divider/>
-  <header class="features__header">
-    <p tabindex="45" class="features__keyword">Customization</p>
-    <h2 tabindex="46" class="features__subtitle">Adapts to how you work</h2>
-    <p  tabindex="47" class="features__description">Manage reminder notifications at the task level. Turn off notifications for date-based tasks, enable time zones, and repeat tasks from their completion date.</p>
-  </header>
+  <app-features-header [header]="customizationHeader"/>
   <div class="features__images__wrapper features__images__wrapper--single">
     <picture>
       <img tabindex="48" src="doo_reminder_options_customization@2x.jpg" alt="Doo app customization example" srcset="">
     </picture>
   </div>
   <app-divider/>
-  <header class="features__header">
-    <p tabindex="49" class="features__keyword">Apple Watch</p>
-    <h2 tabindex="50" class="features__subtitle">See what’s next</h2>
-    <p tabindex="51" class="features__description">Manage tasks from the Apple Watch app or review from your watch face. Two complication options highlight what’s upcoming or your last due item.</p>
-  </header>
+  <app-features-header [header]="appleWatchHeader"/>
   <div class="features__images__wrapper features__images__wrapper--carrousel">
     <picture>
       <img tabindex="52" src="doo_apple_watch_complications@2x.jpg" alt="Doo app running on apple watch" srcset="">
     </picture>
   </div>
   <app-divider/>
-  <header class="features__header">
-    <p tabindex="53" class="features__keyword">Private by design</p>
-    <h2 tabindex="54" class="features__subtitle">Keeps your data private</h2>
-    <p tabindex="55" class="features__description">No accounts. No trackers, no ads, and no personal data collection. Ever. Your data stays on your device and within your private iCloud account. Simple — the way it should be.</p>
-  </header>
+  <app-features-header [header]="privacyHeader" />
   <div class="features__images__wrapper--comparator">
     <picture>
       <img tabindex="56" src="lock_icon@2x.jpg" alt="lock icon" srcset="">
@@ -110,6 +83,7 @@
     </picture>
   </div>
   <app-divider/>
-    <app-features-summary/>
-    <app-footer/>
-  </section>
+  <app-features-summary/>
+</section>
+<app-downloads/>
+<app-footer/>

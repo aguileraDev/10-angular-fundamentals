@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { DividerComponent } from '../divider/divider.component';
 import { FeaturesSummary } from '../../interfaces/features.summary.interface';
+import { Link } from '@interfaces/link.interface';
+import { LinkComponent } from '@components/link/link.component';
 
 @Component({
   selector: 'app-features-summary',
   standalone: true,
-  imports: [DividerComponent],
+  imports: [DividerComponent, LinkComponent],
   templateUrl: './features-summary.component.html',
   styleUrl: './features-summary.component.scss'
 })
@@ -44,4 +46,8 @@ export class FeaturesSummaryComponent {
     },
   ]
 
+  link: Link = {
+    url:'http://getdooapp.com/features',
+    title:'View all features',
+  }
 }

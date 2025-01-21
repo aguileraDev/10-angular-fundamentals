@@ -6,6 +6,10 @@
   display: flex;
   justify-content: space-between;
 
+  &__footer{
+    text-align: center
+  }
+
   &__item {
       text-transform: capitalize;
       font-weight: 500;

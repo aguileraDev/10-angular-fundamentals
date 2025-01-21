@@ -1,42 +1,27 @@
-<nav class="nav">
+<nav [class]="isFooterMenu ? 'nav__footer' : 'nav'">
   <div class="nav__wrapper">
     <li class="nav__item">
-     <a tabindex="1" class="nav__link" href="https://getdooapp.com/">
-       <i aria-hidden="true">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="20"
-           viewBox="0 0 60 20" version="1.1">
-           <title>Logo / Wordmark</title>
-           <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-             <g id="Desktop-HD" transform="translate(-80.000000, -34.000000)">
-               <g id="Group" transform="translate(80.000000, 34.000000)">
-                 <ellipse id="Oval" fill="#A3F2CB" cx="28.4337349" cy="10" rx="10.0401606" ry="10"></ellipse>
-                 <ellipse id="Oval" fill="#ACBEFB" cx="49.9598394" cy="10" rx="10.0401606" ry="10"></ellipse>
-                 <path
-                   d="M6.8943654,20 C12.4467191,20 16.9477912,15.5228475 16.9477912,10 C16.9477912,4.4771525 12.4467191,0 6.8943654,0 L0,0 L0,20 L6.8943654,20 Z"
-                   id="Oval" fill="#64E5A6"></path>
-               </g>
-             </g>
-           </g>
-         </svg>
-       </i>
-     </a>
-   </li>
+      <a class="nav__link" href="https://getdooapp.com/">
+        <picture>
+          <img src="Doo-Logo.svg" alt="Doo Get Things Done" srcset="">
+        </picture>
+      </a>
+    </li>
   </div>
   <menu class="nav__wrapper">
-    <li tabindex="2" class="nav__item">
-      <a aria-details="Go to overview section" class="nav__link nav__link--active nav__link--hover" href="https://getdooapp.com/">overview</a>
+    @for (link of menuItems; track $index) {
+    @if(!isFooterMenu){
+    <li class="nav__item">
+      <a [attr.aria-details]="link.aria" [class]="link.classes" [href]="link.url">{{link.title}}</a>
     </li>
-    <li  tabindex="3" class="nav__item">
-      <a aria-details="Go to features section" class="nav__link nav__link--hover" href="https://getdooapp.com/features">features</a>
+    }@else if(link.showInFooter){
+    <li class="nav__item nav__item--footer">
+      <a [attr.aria-details]="link.aria" class="nav__link--footer" [href]="link.url">{{link.title}}</a>
     </li>
-    <li tabindex="4" class="nav__item">
-      <a aria-details="Go to support section" class="nav__link nav__link--hover" href="https://getdooapp.com/support">support</a>
-    </li>
-    <li aria-details="Go to contact section" tabindex="5" class="nav__item">
-      <a class="nav__link nav__link-hover" href="https://getdooapp.com/contact">contact</a>
-    </li>
-    <li tabindex="6" class="nav__item">
-      <a aria-label="Download for IOS"  class="nav__link nav__link--hover" href="https://apps.apple.com/us/app/id1515371154">download</a>
-    </li>
+   }
+  }
   </menu>
 </nav>
+@if(isFooterMenu){
+<h4>Made with love in NYC. © 2016 - 2022 Ciarlo Software, LLC</h4>
+}

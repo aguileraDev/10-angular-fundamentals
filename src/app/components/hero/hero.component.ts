@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, input, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-hero',
